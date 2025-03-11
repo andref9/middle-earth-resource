@@ -14,6 +14,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: npm i && npm run build
+        env:
+          VITE_THE_ONE_API_KEY: ${{ secrets.VITE_THE_ONE_API_KEY }}
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
