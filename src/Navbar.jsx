@@ -4,9 +4,9 @@ function Navbar() {
   // stuff
   return (
     <nav>
-      <Link to={'/'}>Home</Link>
-      <Link to={'/characters'}>Characters</Link>
-      <Link to={'/movies'}>Movies</Link>
+      <Link className="nav-link" to={'/'}>Home</Link>
+      <Link className="nav-link" to={'/characters'}>Characters</Link>
+      <Link className="nav-link" to={'/movies'}>Movies</Link>
     </nav>
   )
 }

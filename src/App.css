@@ -5,6 +5,15 @@
   text-align: center;
 }
 
+nav {
+  display: inline;
+}
+
+.nav-link {
+  display: block;
+  padding: 8px;
+}
+
 .card {
   padding: 2em;
 }
